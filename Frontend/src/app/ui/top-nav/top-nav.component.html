@@ -1,0 +1,82 @@
+<mdc-top-app-bar #demoappbar fixed [mdcElevation]="4" [fixedAdjustElement]="mainContent">
+	<mdc-top-app-bar-row>
+		<mdc-top-app-bar-section align="start" title="Health Care">
+      <button mdcIconButton mdcTopAppBarNavIcon icon="menu"  (click)="demoModal.open = !demoModal.open"></button>
+    </mdc-top-app-bar-section>
+  
+	</mdc-top-app-bar-row>
+</mdc-top-app-bar>
+<div class="main" #mainContent>
+  <div class="content">
+    <div class="layout__row--no-wrap demo-drawer-app">
+      <mdc-drawer drawer="modal" #demoModal open>
+
+        <mdc-drawer-content>
+          <mdc-list useActivatedClass>
+              <!--<a mdc-list-item routerLink="/home">-->
+                <!--<mdc-icon mdcListItemGraphic>favorite</mdc-icon>Home-->
+              <!--</a>-->
+
+              <!--<a mdc-list-item routerLink="/">-->
+                <!--<mdc-icon mdcListItemGraphic>money</mdc-icon>Transaction-->
+              <!--</a>-->
+
+            <h3 mdcListGroupSubheader>Government</h3>
+            <a mdc-list-item routerLink="/addDoc">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Add Doctor
+            </a>
+            <br>
+            <mdc-list-divider></mdc-list-divider>
+            <br>
+            <h3 mdcListGroupSubheader>Doctor</h3>
+            <a mdc-list-item routerLink="/patients">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Patients
+            </a>
+            <a mdc-list-item routerLink="/addPrescription">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Add Prescription
+            </a>
+            <br>
+            <mdc-list-divider></mdc-list-divider>
+            <br>
+            <h3 mdcListGroupSubheader>Patient</h3>
+            <a mdc-list-item routerLink="/registerPatient">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Register Patient
+            </a>
+            <a mdc-list-item routerLink="/giveCreateOnlyAccess">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Give CreateOnly Access to Doctor
+            </a>
+            <a mdc-list-item routerLink="/giveViewOnlyAccess">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Give ViewOnly Access to Doctor
+            </a>
+            <a mdc-list-item routerLink="/revokeCreateOnlyAccess">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Revoke CreateOnly Access to Doctor
+            </a>
+            <a mdc-list-item routerLink="/revokeViewOnlyAccess">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Revoke ViewOnly Access to Doctor
+            </a>
+            <a mdc-list-item routerLink="/permittedDoctors">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Permitted Doctors
+            </a>
+            <a mdc-list-item routerLink="/prescription">
+              <mdc-icon mdcListItemGraphic>money</mdc-icon>Prescriptions
+            </a>
+            <br>
+            <mdc-list-divider></mdc-list-divider>
+            <br>
+
+
+
+
+
+
+
+
+
+
+          </mdc-list>
+        </mdc-drawer-content>
+      </mdc-drawer>
+    </div>
+  </div>
+</div>
+
