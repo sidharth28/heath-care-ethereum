@@ -1,29 +1,33 @@
-**Ethereum / Metamask / Angular - Health Care**
+
+## Ethereum / Metamask / Angular - Health Care
 
 Steps for setup : 
 
-
-npm install -g truffle
-npm install -g @angular/cli
-npm install -g ganache-cli
-
-npm install dotenv && npm install truffle-hdwallet-provider
+### Install truffle, angular and ganache
 
 
-Run this command in different terminal ` ganache-cli`
+    npm install -g truffle
+    npm install -g @angular/cli
+    npm install -g ganache-cli
 
-Navigate to Blockchain folder.
-Run this command   `truffle compile`
-Run this command   `truffle migrate`
+### Install the additional node dependencies
 
-
-Navigate to frontend folder.
-Run this command  `npm install`
- Run this command  `ng serve `
+    npm install dotenv && npm install truffle-hdwallet-provider
 
 
-Open in browser :  http://localhost:4200
 
-Install metamask in browser.
+> Run this command in different terminal ` ganache-cli`
+> Navigate to Blockchain folder.
 
-Setup metamask to run application in browser.
+
+Run  commands  `truffle compile` and   `truffle migrate`
+
+> Navigate to frontend folder.
+
+ Run the command  `npm install && ng serve `
+
+> Install metamask in browser and setup metamask to run application in
+> browser.
+
+Open in browser :  [http://localhost:4200](http://localhost:4200)
+ 
